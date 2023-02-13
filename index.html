@@ -14,16 +14,17 @@
 <body>
     <header>
 
-        <nav class="topnav" id="nav-menu">
-            <div class="navbar-container container">
-                <input type="checkbox" name="" id="">
+        <div class="topnav" id="nav-menu">
+            <nav class="navbar-container container">
+                <!-- <input type="checkbox" name="" id="">
                 <div class="hamburger-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
                     <span class="line line3"></span>
-                </div>
+                </div> -->
+                <a href="#home" class="active">Soumya Adhya</a>
                 <ul class="nav_inner">
-                    <li><a href="#" style="display: none;"></a></li>
+                    <!-- <li><a href="#" style="display: none;"></a></li> -->
                     <li><a href="#home" class="nav-link home">Home</a></li>
                     <li><a href="#about" class="nav-link about">About</a></li>
                     <li><a href="#skills" class="nav-link skills">Skills</a></li>
@@ -34,21 +35,20 @@
                         <a id="resume-link-2" target="_blank" download onclick="Resume()" href="https://drive.google.com/file/d/1BPDySMDMXclvoj4oCfOHycLf5hceaZJa/view?usp=share_link" class="nav-link resume">Resume</a>
                     </li>
                 </ul>
-                <a href="#home" class="active">Soumya Adhya</a>
-            </div>
+            </nav>
 
 
-        </nav>
+        </div>
  
     </header>
 
 
-    <section id="home" class="nav-link home">
+    <!-- -----------------------------home Section -----------------------  -->
+ <div id="home" >
         <div>
             <div>
-                <!-- <p>Hi,👋I am</p> -->
                 <h1 id="user-detail-name">Soumya Adhya</h1>
-                <h1 id="user-detail-intro">A Full Stack Web Developer</h1>
+                <h1 id="user-detail-intro">A <span>Full Stack</span>  <br> Web Developer</h1>
             </div>
             <div>
                 <a id="resume-link-2" href="./img/Soumya_Adhya_Resume_30-01-2023-23-34-44.pdf (1).pdf" download onclick="window.open('https://drive.google.com/file/d/1BPDySMDMXclvoj4oCfOHycLf5hceaZJa/view?usp=share_link')" href="./Mohammad_Ovais_Resume_03-02-2023-23-10-42.pdf"><button id="resume-button-2">Resume </button></a>
@@ -58,53 +58,83 @@
             <img class="home-img" width="200" height="250" src="./img/ei_1674916875148-removebg-preview (1)-01.jpeg" alt="profile image">
         </div>
 
-    </section>
+    </div>
 
+<!-- ----------------------- about section -----------------------------  -->
+    <section id="about" class="about section">
 
-  <!---  <section id="about" class="about section">
-
-        <h1>About</h1>
-
-    </section>
-
-
-
-    <section id="skills">
-
-
-        <div class="skills-card">
-            <img src="" alt="" class="skills-card-img">
-            <h2 class="skills-card-name"> Html</h2>
-        </div>
-
-        <div class="skills-card">
-            <img src="" alt="" class="skills-card-img">
-            <h2 class="skills-card-name"> CSS</h2>
-        </div>
-
-        <div class="skills-card">
-            <img src="" alt="" class="skills-card-img">
-            <h2 class="skills-card-name"> javascript</h2>
-        </div>
-
-        <div class="skills-card">
-            <img src="" alt="" class="skills-card-img">
-            <h2 class="skills-card-name">node js</h2>
-        </div>
-
-        <div class="skills-card">
-            <img src="" alt="" class="skills-card-img">
-            <h2 class="skills-card-name"> express js</h2>
+        <div class="row">
+                <h1 class="sub-title">About Me</h1>
+                <h2>I'm Soumya Adhya</h2>
+                <h3>An enthusiastic Skilled web developer with experience in HTML, CSS, JavaScript, Node.js, MongoDB and Express. Strong background in creating responsive web applications and database management. Proven ability to collaborate effectively in remote teams and a passion for staying up-to-date with emerging technologies.</h3>
+            </div>
         </div>
 
     </section>
 
+<!-- ------------------------ skills ---------------------------  -->
+
+ <section id="skills">
+
+    <h1 class="sub-title">Skills</h1>
+
+    <!-- <hr> -->
+    <div id="grid">
+        <div class="skills-card">
+            <img class="skills-card-img" src="./img/html.png" alt="html">
+            <p class="skills-card-name">HTML</p>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./img/css.png" alt="css">
+            <p class="skills-card-name">CSS</p>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./img/javascript.png" alt="JavaScript">
+            <p class="skills-card-name">JavaScript</p>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./img/nodejs.png" alt="NodeJS">
+            <p class="skills-card-name">NodeJS</p>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./img/express.png" alt="Express">
+            <p class="skills-card-name">ExpressJS</p>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./img/mongodb.png" alt="MongoDB">
+            <p class="skills-card-name">MongoDB</p>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./img/sql.png" alt="sql">
+            <p class="skills-card-name">Redis</p>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./img/redis.png" alt="Redis">
+            <p class="skills-card-name">Git</p>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./img/git.png" alt="git">
+            <p class="skills-card-name">Github</p>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./img/github_white.png" alt="github">
+            <p class="skills-card-name">Vs Code</p>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="./img/postman.png" alt="Postman">
+            <p class="skills-card-name">Postman</p>
+        </div>
+    </div>
+
+    </section>
+
+    <!-- -------------------------projects ------------------------------ -->
 
     <section id="projects">
 
         <div class="project-card">
 
-            <img src="" alt="ad">
+            <img src="./img/avira_screenshot.png" alt="ad">
 
             <h1 class="project-title">demo</h1>
 
@@ -112,30 +142,31 @@
 
             <p class="project-tech-stack">html css s</p>
 
-            <a class="project-github-link" href="https://github.com/ovaisazmi/-grateful-reaction-8709"> github</a>
+            <button class="project-github-btn"><a class="project-github-link" href="https://github.com/SoumyaAdhya007/radioactive-care-9325"> github</a></button>
 
-            <a class="project-deployed-link" href="https://fastidious-fudge-222f83.netlify.app">Deployed </a>
+            <button class="project-deployed-btn"><a class="project-deployed-link" href="https://deft-stroopwafel-191b92.netlify.app/">Deployed </a></button>
 
         </div>
 
 
         <div class="project-card">
+            <div class="project-card-child-div">
+                <img src="./img/stacation_screenshot.png" alt="daw">
+                
+                <h1 class="project-title">demo</h1>
+                
+                <h4 class="project-description">descriptioan</h4>
+                
+                <p class="project-tech-stack">html css js</p>
+            </div>
 
-            <img src="" alt="daw">
+            <button class="project-github-btn"><i class="fa-brands fa-github"></i><a class="project-github-link" href="https://github.com/neha-sahu18/likely-secretary-3214">github</a></button>
 
-            <h1 class="project-title">demo</h1>
-
-            <h4 class="project-description">descriptioan</h4>
-
-            <p class="project-tech-stack">html css js</p>
-
-            <a class="project-github-link" href="https://github.com/ovaisazmi/-grateful-reaction-8709">github</a>
-
-            <a class="project-deployed-link" href="https://fastidious-fudge-222f83.netlify.app">Deployed</a>
+            <button class="project-deployed-btn"><a class="project-deployed-link" href="https://stayccationcom.netlify.app/">Deployed</a></button>
         </div>
 
 
-        <div class="project-card">
+        <!-- <div class="project-card">
 
             <img src="" alt="asd">
 
@@ -165,12 +196,12 @@
             <a class="project-github-link" href="https://github.com/ovaisazmi/-grateful-reaction-8709">github</a>
 
             <a class="project-deployed-link" href="https://fastidious-fudge-222f83.netlify.app">Deployed</a>
-        </div>
+        </div> -->
 
     </section>
 
 
-    <section id="contact">
+   <!--- <section id="contact">
         <h2>Contact me</h2>
 
         <a id="contact-github" href="https://github.com/SoumyaAdhya007">Github</a>
