@@ -7,38 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
-    <style>
-
-    </style>
+    <script src="https://kit.fontawesome.com/f90c67bbfa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Style/index.css">
 </head>
 
 <body>
     <header>
 
-        <div class="topnav" id="nav-menu">
-            <a href="#home" class="active">Soumya Adhya</a>
-            <div class="nav_inner" style="float:right;">
-                <a href="#" style="display: none;"></a>
-                <a href="#home" class="nav-link home">Home</a>
-                <a href="#about" class="nav-link about">About</a>
-                <a href="#skills" class="nav-link skills">Skills</a>
-                <a href="#projects" class="nav-link projects">Projects</a>
-                <a href="#contact" class="nav-link contact">Contact</a>
-                <a id="resume-link-2" onclick="Resume()" href="https://drive.google.com/file/d/1BPDySMDMXclvoj4oCfOHycLf5hceaZJa/view?usp=share_link" class="nav-link resume">Resume</a>
+        <nav class="topnav" id="nav-menu">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="nav_inner">
+                    <li><a href="#" style="display: none;"></a></li>
+                    <li><a href="#home" class="nav-link home">Home</a></li>
+                    <li><a href="#about" class="nav-link about">About</a></li>
+                    <li><a href="#skills" class="nav-link skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link contact">Contact</a></li>
+                    <li>
+                        <i class="fa-solid fa-download"></i>
+                        <a id="resume-link-2" target="_blank" download onclick="Resume()" href="https://drive.google.com/file/d/1BPDySMDMXclvoj4oCfOHycLf5hceaZJa/view?usp=share_link" class="nav-link resume">Resume</a>
+                    </li>
+                </ul>
+                <a href="#home" class="active">Soumya Adhya</a>
             </div>
-            <a style="position: absolute;top: 0;right: 0;" href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
+
+
+        </nav>
+ 
     </header>
 
 
-    <section id="home">
+    <section id="home" class="nav-link home">
         <div>
             <div>
-                <h1>Hi,👋I am</h1>
+                <!-- <p>Hi,👋I am</p> -->
                 <h1 id="user-detail-name">Soumya Adhya</h1>
                 <h1 id="user-detail-intro">A Full Stack Web Developer</h1>
             </div>
@@ -52,9 +60,8 @@
 
     </section>
 
-    <!-- <p id="user-detail-intro">I am currently learning full stacwqeqweassionate about solving real weqweworld problems anweqd activel eld of web development and software engineering</p> -->
 
-    <section id="about" class="about section">
+  <!---  <section id="about" class="about section">
 
         <h1>About</h1>
 
@@ -174,7 +181,7 @@
 
         <a id="contact-email" href="soumyaadhya007@gmail.com">soumyaadhya007@gmail.com</a>
 
-    </section>
+    </section> -->
 
 
 </body>
