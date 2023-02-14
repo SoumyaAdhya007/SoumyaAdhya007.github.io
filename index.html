@@ -44,7 +44,7 @@
 
 
     <!-- -----------------------------home Section -----------------------  -->
- <div id="home" >
+ <div id="home" class="home" >
         <div>
             <div>
                 <h1 id="user-detail-name">Soumya Adhya</h1>
@@ -54,6 +54,14 @@
                 <a id="resume-link-2" href="./img/Soumya_Adhya_Resume_30-01-2023-23-34-44.pdf (1).pdf" download onclick="window.open('https://drive.google.com/file/d/1BPDySMDMXclvoj4oCfOHycLf5hceaZJa/view?usp=share_link')" href="./Mohammad_Ovais_Resume_03-02-2023-23-10-42.pdf"><button id="resume-button-2">Resume </button></a>
             </div>
         </div>
+        <!-- <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Soumya Adhya</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                
+            </div>
+        </div> -->
         <div>
             <img class="home-img" width="200" height="250" src="./img/ei_1674916875148-removebg-preview (1)-01.jpeg" alt="profile image">
         </div>
@@ -63,7 +71,7 @@
 <!-- ----------------------- about section -----------------------------  -->
     <section id="about" class="about section">
 
-        <div class="row">
+        <div class="about-child-div">
                 <h1 class="sub-title">About Me</h1>
                 <h2>I'm Soumya Adhya</h2>
                 <h3>An enthusiastic Skilled web developer with experience in HTML, CSS, JavaScript, Node.js, MongoDB and Express. Strong background in creating responsive web applications and database management. Proven ability to collaborate effectively in remote teams and a passion for staying up-to-date with emerging technologies.</h3>
@@ -131,104 +139,107 @@
     <!-- -------------------------projects ------------------------------ -->
 
     <section id="projects">
+        <div class="project-div">
 
-        <div class="project-card">
-
+            <div class="project-card">
+                
             <img src="./img/avira_screenshot.png" alt="ad">
+   
 
-            <h1 class="project-title">demo</h1>
-
-            <h4 class="project-description">descrsiptio n</h4>
-
+            <h1 class="project-title">Avira.Com</h1>
+            
+            <h4 class="project-description">Apple Inc. is an American computer and consumer electronics company famous for creating the iPhone, iPad and Macintosh computers. Apple is one of the largest companies globally with a market cap of over 2 trillion dollars.</h4>
+            
             <p class="project-tech-stack">html css s</p>
-
-            <button class="project-github-btn"><a class="project-github-link" href="https://github.com/SoumyaAdhya007/radioactive-care-9325"> github</a></button>
-
+            
+            <button class="project-github-btn"><a class="project-github-link" href="https://github.com/SoumyaAdhya007/radioactive-care-9325"><i class="fa-brands fa-github"></i> github</a></button>
+            
             <button class="project-deployed-btn"><a class="project-deployed-link" href="https://deft-stroopwafel-191b92.netlify.app/">Deployed </a></button>
+            
+            </div>
+        
+        
+            <div class="project-card">
+                <div class="project-card-child-div">
+                    <img src="./img/stacation_screenshot.png" alt="daw">
+                    
+                    <h1 class="project-title">demo</h1>
+                    
+                    <h4 class="project-description">descriptioan</h4>
+                    
+                    <p class="project-tech-stack">html css js</p>
+                </div>
 
-        </div>
-
-
-        <div class="project-card">
-            <div class="project-card-child-div">
-                <img src="./img/stacation_screenshot.png" alt="daw">
+                <button class="project-github-btn"><a class="project-github-link" href="https://github.com/neha-sahu18/likely-secretary-3214"><i class="fa-brands fa-github"></i>github</a></button>
+                
+                <button class="project-deployed-btn"><a class="project-deployed-link" href="https://stayccationcom.netlify.app/"><img src="./img/netlify-icon-removebg-preview.png" alt=""> Deployed</a></button>
+            </div>
+        
+        
+            <!-- <div class="project-card">
+                
+                <img src="" alt="asd">
                 
                 <h1 class="project-title">demo</h1>
                 
-                <h4 class="project-description">descriptioan</h4>
+                <h4 class="project-description">descrisption </h4>
                 
                 <p class="project-tech-stack">html css js</p>
+                
+                <a class="project-github-link" href="https://github.com/ovaisazmi/-grateful-reaction-8709">github</a>
+                
+                <a class="project-deployed-link" href="https://fastidious-fudge-222f83.netlify.app">Deployed</a>
+            </div>
+        
+        
+            <div class="project-card">
+                
+                <img src="" alt="sad">
+                
+                <h1 class="project-title">demo</h1>
+                
+                <h4 class="project-description">descriptaion</h4>
+                
+                <p class="project-tech-stack">html css js</p>
+                
+                
+                <a class="project-github-link" href="https://github.com/ovaisazmi/-grateful-reaction-8709">github</a>
+                
+                <a class="project-deployed-link" href="https://fastidious-fudge-222f83.netlify.app">Deployed</a>
+            </div> -->
+        
+    </div>
+    </section>
+    
+    <!-- ------------------------- contact section -------------------------------  -->
+   <section id="contact">
+       <div class="container">
+           <div class="row">
+               <div class="contact-left">
+                        <!-- <h2>Contact me</h2> -->
+                        <h1 >Contact Me</h1>
+                        <a id="contact-email" href="soumyaadhya007@gmail.com"><i class="fa-sharp fa-solid fa-paper-plane"></i> soumyaadhya007@gmail.com</a>
+                        <a id="contact-phone" href="+919717470197"><i class="fa-solid fa-phone"></i> +91 9006060666</a>
+                        <a id="contact-linkedin" href="https://www.linkedin.com/in/soumya-adhya-88b685243/"><i class="fa-brands fa-linkedin"></i> SoumyaAdhya</a>
+                        <a id="contact-github" href="https://github.com/SoumyaAdhya007"><i class="fa-brands fa-github"></i> SoumyaAdhya007</a>
+                    </div>
+                    <div class="contact-right">
+                        <form >
+                            <input type="text" name="Name" placeholder="Your Nmae" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
-            <button class="project-github-btn"><i class="fa-brands fa-github"></i><a class="project-github-link" href="https://github.com/neha-sahu18/likely-secretary-3214">github</a></button>
-
-            <button class="project-deployed-btn"><a class="project-deployed-link" href="https://stayccationcom.netlify.app/">Deployed</a></button>
-        </div>
 
 
-        <!-- <div class="project-card">
-
-            <img src="" alt="asd">
-
-            <h1 class="project-title">demo</h1>
-
-            <h4 class="project-description">descrisption </h4>
-
-            <p class="project-tech-stack">html css js</p>
-
-            <a class="project-github-link" href="https://github.com/ovaisazmi/-grateful-reaction-8709">github</a>
-
-            <a class="project-deployed-link" href="https://fastidious-fudge-222f83.netlify.app">Deployed</a>
-        </div>
-
-
-        <div class="project-card">
-
-            <img src="" alt="sad">
-
-            <h1 class="project-title">demo</h1>
-
-            <h4 class="project-description">descriptaion</h4>
-
-            <p class="project-tech-stack">html css js</p>
-
-
-            <a class="project-github-link" href="https://github.com/ovaisazmi/-grateful-reaction-8709">github</a>
-
-            <a class="project-deployed-link" href="https://fastidious-fudge-222f83.netlify.app">Deployed</a>
-        </div> -->
 
     </section>
 
 
-   <!--- <section id="contact">
-        <h2>Contact me</h2>
-
-        <a id="contact-github" href="https://github.com/SoumyaAdhya007">Github</a>
-
-        <a id="contact-linkedin" href="https://www.linkedin.com/in/soumya-adhya-88b685243/">inkedin</a>
-
-        <a id="contact-phone" href="+919717470197">+91 9006060666</a>
-
-        <a id="contact-email" href="soumyaadhya007@gmail.com">soumyaadhya007@gmail.com</a>
-
-    </section> -->
-
-
 </body>
-<script>
-    function myFunction() {
-        var x = document.getElementById("nav-menu");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-
-    function Resume() {
-        console.log("resume");
-    }
-</script>
-
+<script src="./index.js"></script>
 </html>

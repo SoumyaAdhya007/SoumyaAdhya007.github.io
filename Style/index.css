@@ -6,8 +6,12 @@
     box-sizing: border-box;
 }
 body{
-    background: #080808;
+    /* background: #080808; */
+    background: #2f3556;
+    /* background: #abcde6; */
     color: #fff;
+    /* color: #2f3556; */
+
 }
 .topnav{
     /* display: flex;
@@ -25,6 +29,8 @@ nav{
 .active{
     width: 200px;
     color: #fff;
+    /* color: #2f3556; */
+
     text-decoration: none;
     font-size: 25px;
 }
@@ -34,8 +40,10 @@ nav ul li{
     margin: 10px 20px;
 
 }
+
 nav ul li a {
     color: #fff;
+    /* color: #2f3556; */
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -53,6 +61,9 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+
+/* ----------------------------------home --------------------------------------  */
 #home{
     width: 85%;
     display: flex;
@@ -71,24 +82,86 @@ nav ul li a:hover::after{
 #home h1{
     font-size: 60px;
     margin-top: 20px;
+    
 }
 #home span{
     color: #ff004f;
 }
+/* .max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+  }
+  .home {
+    display: flex;
+    background: url("../img/") no-repeat center;
+    background-color: #111;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .home .max-width {
+    width: 100%;
+    display: flex;
+  }
+  .home .max-width .row {
+    margin-right: 0;
+  }
+  .home .home-content .text-1 {
+    font-size: 27px;
+  }
+  .home .home-content .text-2 {
+    font-size: 65px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  .home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+  }
+  .home .home-content .text-3 span {
+    color: #00a2e2;
+    font-weight: 500;
+  }
+  .home .home-content a {
+    display: inline-block;
+    background: #00a2e2;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #00a2e2;
+    transition: all 0.3s ease;
+  }
+  .home .home-content a:hover {
+    color: #00a2e2;
+    background: none;
+  } */
+  
+
+/* ----------------------------------------- about ----------------------------------------------  */
 #about{
     padding: 80px 0;
-    color:#ababab ;
+    /* color:#ababab ; */
+    /* color: #2f3556; */
+
 }
-.row{
+.about-child-div{
     width: 50%;
     margin: auto;
     text-align: center;
 }
-.row h2{
+.about-child-div h2{
    margin-top: 5px;
    margin-bottom: 5px;
+   
 }
-.row p{
+.about-child-div p{
     gap: 5px;
 }
 .sub-title{
@@ -130,23 +203,99 @@ nav ul li a:hover::after{
 
 
   /* ------------------- projects -----------------------  */
-  
   #projects{
-    width: 90%;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+  }
+  .project-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px 20px;
+  }
+  .project-div img{
+    width: 33rem;
+    height: 20rem;
+    border-radius: 10px;
+  }
+.project-deployed-btn img{
+    height: 20px;
+    width: 20px;
+}
+.project-card{
+    padding: 20px;
+    background: #120f24;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+  /* -----------------------------contact ---------------------------------  */
+  #contact{
+    width: 85%;
     margin: auto;
   }
-  
-  .project-card-child-div{
+  .row{
     display: flex;
   }
-  .project-card img{
-    width: 40%;
-    height: 300px;
+  .contact-left{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 35%;
+  }
+  
+  
+  .contact-left i{
+    color: #ff004f;
+    margin-left: 15px;
+    font-size: 25px;
+}
+.contact-left a{
+    color:#ababab ;
+
+    margin-left: 15px;
+    font-size: 25px;
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+.contact-left a:hover{
+    color: #120f24;
+    /* transform: translateY(-5px); */
+    /* color: ; */
+}
+  .contact-right{
+    width: 65%;
   }
 
-  .project-github-btn{
-    background-color: white;
+  .btn.btn2{
+    border: 0;
+    border-radius: 7px;
+    display: inline-block;
+    background: #ec064f;
   }
-  .project-github-btn a{
-    color: black;
-  }
+  .contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin:15px 0 ;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    color: white;
+    padding:14px 60px ;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
