@@ -1,31 +1,46 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: "Nunito", sans-serif;
     box-sizing: border-box;
 }
+
 body{
     /* background: #080808; */
     /* background: #2f3556; */
     /* background: #abcde6; */
     background: #10101a;
+    /* background: #D9E2E9; */
     color: #fff;
     /* color: #2f3556; */
 
 }
+
+/* ====================================== navbar ======================================   */
 .topnav{
     /* display: flex;
     justify-content: space-between; */
-    padding: 10px 5%;
-   
+    padding: 10px 2%;
+    /* width: 90%; */
+    margin: auto;
 }
+/* .topnav.scroll {
+  background-color: #A1572F;
+  color: #eef;
+} */
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
 nav{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* position: absolute; */
 }
 .active{
     width: 200px;
@@ -49,6 +64,14 @@ nav ul li a {
     font-size: 18px;
     position: relative;
 }
+.nav-resume-div{
+  background-color: #262626;
+  border-radius: 5px;
+  padding: 10px;
+}
+.nav-resume-div i,.nav-resume-div a{
+  color: #ff004f;
+}
 nav ul li a::after{
     content: '';
     width: 0;
@@ -66,20 +89,25 @@ nav ul li a:hover::after{
 
 /* ----------------------------------home --------------------------------------  */
 #home{
-    width: 100%;
-    /* display: flex; */
-    height: 80vh;
+    width: 80%;
+    min-height:300px ;
     margin: auto;
-    /* justify-content: space-between; */
-    /* margin-top: 10%; */
+    margin-top: 30px;
     font-size: 30px;
-  background: url(../img/home_GIF.gif);
+  background: url(../img/Portfolio.gif);
   background-size: 100% 100%;
   padding: 10%;
-  
+  background-color: #ababab;
+  border: 1px solid #ababab;
+  border-radius: 10px;
 }
 .home-div{
-  text-align: center;
+  text-align: left;
+}
+
+.home-animated-div img{
+  width: 100%;
+  height: 300px;
 }
 /* .home-img{
     width: 283px;
@@ -150,11 +178,26 @@ nav ul li a:hover::after{
     color: #00a2e2;
     background: none;
   } */
-  
+  #resume-button-2{
+    margin-top: 30px;
+  }
+  #resume-button-2 button{
+    /* width: 10%; */
+    background-color: #ff004f;
+    padding:10px 35px;
+    border-radius: 10px;
+  }
+  #resume-button-2 button a{
+    font-size:1.2rem;
+    color: #fff;
+  }
 
 /* ----------------------------------------- about ----------------------------------------------  */
 #about{
-    padding: 80px 0;
+  width: 85%;
+  margin: auto;
+  margin-top: 100px;
+    padding: 50px 0;
     /* color:#ababab ; */
     /* color: #2f3556; */
 
@@ -164,9 +207,18 @@ nav ul li a:hover::after{
     margin: auto;
     text-align: center;
 }
+.about-img{
+  /* padding-top:  20px; */
+
+}
+.row img{
+  width: 65%;
+  height: 100%;
+  border-radius: 20px;
+}
 .about-child-div h2{
-   margin-top: 5px;
-   margin-bottom: 5px;
+   margin-top: 10px;
+   margin-bottom: 10px;
    
 }
 .about-child-div p{
@@ -175,12 +227,16 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: white;
+    color: #ff004f;
     text-align: center;
 }
 
 /* ========================================== skills =====================================  */
+#skills{
+  margin-top: 100px;
+}
 #grid{
+  border-top: 1px solid #ababab;
   width: 85%;
   margin: auto;
     /* margin: 3vh; */
@@ -217,15 +273,19 @@ nav ul li a:hover::after{
     width: 85%;
     margin: auto;
     /* text-align: center; */
+    /* border-top: 1px solid #ababab; */
+    margin-top: 100px;
+
+
   }
   /* .project-div{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 0px 20px;
   } */
-  .project-div img{
-    width: 33rem;
-    height: 22.2rem;
+  .project-card-image-div img{
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
   }
 .project-deployed-btn img{
@@ -243,18 +303,23 @@ nav ul li a:hover::after{
     justify-content: space-between;
     margin-top: 50px;
   }
+  /* .project-card-image-div{
+    width: 50%;
+    height: 100%;
+  } */
 .project-card-dtails-div{
   margin-left: 40px;
 }
 .project-card h1{
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-weight: 700;
     font-size: 3rem;
     /* text-align: center; */
 }
 .project-card p{
-  font-family: "Roboto Slab", serif;
-  font-size: 1.1rem;
+  /* font-family: "Roboto Slab", serif; */
+  /* font-size: 1.1rem; */
+  text-align: justify;
 }
 
 .project-tech-stack {
@@ -266,7 +331,7 @@ nav ul li a:hover::after{
   margin-top: 30px;
 }
 .project-tech-stack div{
-  background: #ffff;
+  /* background: #ffff; */
   height: 100%;
   width: 20%;
   margin-top: 10px;
@@ -277,8 +342,8 @@ nav ul li a:hover::after{
   border-radius: 3px;
 }
 .project-tech-stack img{
-  height: 100%;
-  width: 100%;
+  height: 3rem;
+  width: 3rem;
 }
 .project-deployed-div{
   width: 100%;
@@ -296,6 +361,8 @@ nav ul li a:hover::after{
   width: 20px;
 }
 .project-github-btn{
+  font-family: "Nunito", sans-serif;
+
   padding: 12.5px 10px;
   background-color: black;
   color: white;
@@ -305,14 +372,41 @@ nav ul li a:hover::after{
   
 }
 .project-deployed-btn{
+  font-family: "Nunito", sans-serif;
+
   padding: 10.4px 10px;
   color: rgb(4, 89, 146);
 }
+
+
+/* =========================================== statistics ==================================================  */
+
+
+#statisticsdiv > div:nth-child(1) {
+  flex-direction: column;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .home {
+    padding: 1rem 5rem;
+  }
+  #statisticsdiv > div:nth-child(1) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 
   /* -----------------------------contact ---------------------------------  */
   #contact{
     width: 85%;
     margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   .row{
     display: flex;
@@ -325,16 +419,21 @@ nav ul li a:hover::after{
     color: white;
     margin-left: 15px;
 
-    /* text-align: center; */
+    text-align: center;
+    color: #ff004f;
   }
   .contact-left{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    width: 35%;
-    margin-left: 15px;
+    width: 38%;
+    /* margin-left: 15px; */
+    padding: 0px;
+    margin-top: 10px;
   }
   
-  
+  /* .contact-left div{
+    margin-bottom: 10px;
+  } */
   .contact-left i{
     color: #ff004f;
     /* margin-left: 15px; */
@@ -343,14 +442,17 @@ nav ul li a:hover::after{
 .contact-left a{
     color:#ababab ;
 
-    margin-left: 15px;
+    /* margin-left: 15px; */
+    
     font-size: 25px;
+    /* margin-bottom: 0px; */
     text-decoration: none;
-    transition: transform 0.5s;
+    /* transition: transform 0.5s; */
 }
 
   .contact-right{
-    width: 65%;
+    /* margin-top:20px ; */
+    width: 60%;
   }
 
   .btn.btn2{
@@ -360,6 +462,8 @@ nav ul li a:hover::after{
     background: #ec064f;
   }
   .contact-right form{
+    /* margin-top: 10px; */
+
     width: 100%;
 }
 form input,form textarea{
