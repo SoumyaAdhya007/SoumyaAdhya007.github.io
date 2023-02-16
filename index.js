@@ -3,12 +3,21 @@
 //     if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
 //   };
 
+let sidemune= document.querySelector(".nav_inner");
+
+function openmenu(){
+    sidemune.style.right="0";
+}
+function closemenu(){
+    sidemune.style.right="-200px";
+
+}
 
 
   GitHubCalendar(".calendar", "SoumyaAdhya007");
 
 // or enable responsive functionality:
-GitHubCalendar(".calendar", "SoumyaAdhya007", { responsive: true });
+// GitHubCalendar(".calendar", "SoumyaAdhya007", { responsive: true });
 
 // Use a proxy
 // const username = "SoumyaAdhya007";
@@ -20,7 +29,7 @@ GitHubCalendar(".calendar", "SoumyaAdhya007", { responsive: true });
 // .catch((err)=>console.log(err))
 GitHubCalendar(".calendar", "SoumyaAdhya007", {
     responsive: true,
-    global_stats: false,
+    global_stats: true,
     tooltips: true,
   });
 

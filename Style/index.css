@@ -5,7 +5,9 @@
     font-family: "Nunito", sans-serif;
     box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body{
     /* background: #080808; */
     /* background: #2f3556; */
@@ -18,6 +20,16 @@ body{
 }
 
 /* ====================================== navbar ======================================   */
+header{
+  background-color: #0f0f17;
+  color: #ababab;
+  border-bottom: 1px solid #ababab;
+  border-radius: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .topnav{
     /* display: flex;
     justify-content: space-between; */
@@ -34,6 +46,7 @@ body{
   top: 0;
   width: 100%;
 } */
+
 nav{
     width: 100%;
     display: flex;
@@ -43,12 +56,19 @@ nav{
     /* position: absolute; */
 }
 .active{
-    width: 200px;
-    color: #fff;
+    /* width: 200px;
+    color: #fff; */
     /* color: #2f3556; */
-
+    font-size: 50px;
+    color: #ff004f;
+    
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif;
     text-decoration: none;
-    font-size: 25px;
+    /* font-size: 25px; */
+}
+.active span{
+  color: #ababab;
 }
 nav ul li{
     display: inline-block;
@@ -90,23 +110,24 @@ nav ul li a:hover::after{
 
 /* ----------------------------------home --------------------------------------  */
 #home{
-    width: 100%;
+    width: 90%;
     min-height:auto ;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 130px;
     font-size: 30px;
-  background: url(../img/maingif.1646021.gif);
+  background: url(../img//Portfolio-back.gif);
   background-size: 100% 100%;
-  padding: 10%;
+  padding: 3% 5%;
   background-color: #ababab;
   border: 1px solid #ababab;
   border-radius: 10px;
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
 }
 .home-div{
+  margin-top: 10rem;
   text-align: left;
-  width: 50%;
+  width: 60%;
 }
 .home-animated-div{
   width: 30%;
@@ -114,7 +135,7 @@ nav ul li a:hover::after{
 }
 .home-animated-div img{
   width: 100%;
-  height: 300px;
+  height: 30rem;
   object-fit: cover;
 }
 /* .home-img{
@@ -137,8 +158,9 @@ nav ul li a:hover::after{
   width: 100%;
 }
 .home-div-intro h2{
-  color: #10101a;
+  color: #fff;
 }
+
   #resume-button-2{
     /* margin-top: 30px; */
 
@@ -193,6 +215,13 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #ff004f;
     text-align: center;
+}
+.sub-title-mobile{
+  display: none;
+  /* font-size: 60px;
+    font-weight: 600;
+    color: #ff004f;
+    text-align: center; */
 }
 
 /* ========================================== skills =====================================  */
@@ -475,4 +504,185 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+
+
+nav .fas{
+  display: none;
+}
+
+/* ================================== css for small screen ========================================  */
+@media only screen and (max-width:600px){
+
+/* =============================== navbar ==============================  */
+nav .fas{
+  display: block;
+  font-size: 25px;
+}
+nav ul{
+  background: #ff004f ;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+  transition: right 0.5s;
+}
+nav ul li {
+  display: block;
+  margin: 25px;
+
+}
+nav ul .fas{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+}
+
+  /* ============================= home =============================  */
+  #home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .home-div{
+    text-align: center;
+    width: 100%;
+  }
+  .home-div-intro{
+    width: 100%;
+    margin-bottom: 50px;
+    height: 12rem;
+  }
+  .home-animated-div{
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  /* ============================= about =======================================  */
+  #about{
+    width: 100%;
+  }
+  
+  .sub-title-mobile{
+    display: block;
+    font-size: 60px;
+    font-weight: 600;
+    color: #ff004f;
+    text-align: center;
+  }
+  .about-child-div>h1{
+    display: none;
+  }
+  .row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-child-div{
+    width: 85%;
+    margin-top: 20px;
+  }
+  .about-img{
+
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    height: 20rem;
+  }
+  .about-img img{
+    width: 100%;
+    height: 100%;
+  }
+  .user-detail-intro{
+    width: 100%;
+    /* text-align: justify; */
+  }
+
+
+  /* ================================= skills ===============================  */
+  #skills{
+    width: 90%;
+    margin: auto;
+  }
+  #grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+
+  /* ==================================== projects =================================  */
+  #projects{
+    width: 90%;
+    margin: auto;
+  }
+
+  .project-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card-image-div, .project-card-image-div img{
+    width: 100%;
+  }
+  .project-card-dtails-div{
+    margin-left: 0;
+    width: 100%;
+    padding: 1%;
+  }
+  .project-title{
+    text-align: center;
+  }
+
+
+
+  /* ========================================= stats ================================================  */
+
+
+
+
+  #stats{
+    width: 90%;
+    margin: auto;
+
+  }
+  .github-streak-stats-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .github-streak-stats-div>div{
+    width: 100%;
+  }
+  .github-streak-stats-div>div img{
+    width: 100%;
+    height: 100%;
+  }
+  .github-stats-card{
+    margin-top: 10px;
+  }
+  .github-lang-div,.github-lang-div img{
+    width: 100%;
+    margin-top: 0px;
+  }
+
+
+  /* ============================================ contact ===================================  */
+
+  .contact-left,.contact-right{
+    width: 100%;
+  }
+  /* .contact-email-div{
+    width: 90%;
+    margin: auto;
+  } */
+  .contact-email-div a{
+    font-size: 1.2rem;
+    text-align: justify;
+  }
 }

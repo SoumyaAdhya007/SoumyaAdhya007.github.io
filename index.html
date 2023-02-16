@@ -25,7 +25,7 @@
                     <span class="line line2"></span>
                     <span class="line line3"></span>
                 </div> -->
-                <a href="#home" class="active">Soumya Adhya</a>
+                <a href="#home" class="active"><span><</span>Soumya<span>/></span></a>
                 <ul class="nav_inner">
                     <!-- <li><a href="#" style="display: none;"></a></li> -->
                     <li><a href="#home" class="nav-link home">Home</a></li>
@@ -41,7 +41,9 @@
                         </button> -->
                         <a href="./img/Soumya_Adhya_Resume.pdf" class="nav-link resume" id="resume-button-1" download><i class="fa fa-download"></i> Resume </a>
                     </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
 
 
@@ -59,14 +61,14 @@
                 <h2 >Hello,</h2>
                 <h1 >I'm <span id="user-detail-name" class="variable">Soumya Adhya</span></h1>
             </div>
-            <a href="./img/Soumya_Adhya_Resume.pdf"  id="resume-button-2"  download><i class="fa fa-download"></i> Resume </a>
+                <a href="./img/Soumya_Adhya_Resume.pdf"  id="resume-button-2"  download><i class="fa fa-download"></i> Resume </a>
             <!-- <div class="resume-button-2" >
                 <button id="resume-button-2"> <a id="resume-link-2" href="./img/Soumya_Adhya_Resume.pdf" target="_blank" download="Soumya_Adhya_Resume"  onclick="window.open('./img/Soumya_Adhya_Resume.pdf')">Resume </a></button>
             </div> -->
         </div>
-        <!-- <div class="home-animated-div">
-            <img src="./img/Portfolio-unscreen (1).gif" alt="animated-coding-gif">
-        </div> -->
+        <div class="home-animated-div">
+            <img src="./img/animated-coding-gif-unscreen.gif" alt="animated-coding-gif">
+        </div>
         <!-- <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
@@ -82,6 +84,7 @@
     
     <!-- ----------------------- about section -----------------------------  -->
     <section id="about" class="about section">
+        <h1 class="sub-title-mobile">About Me</h1>
         <div class="row">
             <div class="about-img">
                 <img class="home-img" width="200" height="250" src="./img/ei_1674916875148-removebg-preview (1)-01.jpeg" alt="profile image">
@@ -305,7 +308,8 @@
                     alt=""></div>
         </div>
     
-        <h1 class="sub-title" id="calender"> My Github Calender</h1>
+        <h1 class="sub-title" id="calender">Github Calender</h1>
+        <!-- <h1 class="sub-title-mobile" id="calender">Github Calender</h1> -->
         <div id="calenderdiv" class="react-activity-calendar">
             <div class="calendar" style="margin-top: 30px; color: white;">
                 <!-- Loading stuff -->
@@ -326,7 +330,7 @@
            <div class="row">
                <div class="contact-left">
                         <!-- <h2>Contact me</h2> -->
-                        <div><a id="contact-email" href="soumyaadhya007@gmail.com"><i class="fa-sharp fa-solid fa-paper-plane"></i> soumyaadhya007@gmail.com</a></div>
+                        <div class="contact-email-div"><i class="fa-sharp fa-solid fa-paper-plane"></i><a id="contact-email" href="soumyaadhya007@gmail.com"> soumyaadhya007@gmail.com</a></div>
                         <div><a id="contact-phone" href="+919717470197"><i class="fa-solid fa-phone"></i> +91 9006060666</a></div>
                         <div><a id="contact-linkedin" href="https://www.linkedin.com/in/soumya-adhya-88b685243/"><i class="fa-brands fa-linkedin"></i> SoumyaAdhya</a></div>
                         <div><a id="contact-github" href="https://github.com/SoumyaAdhya007"><i class="fa-brands fa-github"></i> SoumyaAdhya007</a></div>
