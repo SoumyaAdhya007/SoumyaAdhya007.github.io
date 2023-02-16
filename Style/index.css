@@ -67,7 +67,7 @@ nav ul li a {
 #resume-button-1{
   background-color: #ff004f;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   border: 0;
 }
 #resume-button-1 i,#resume-button-1{
@@ -90,25 +90,32 @@ nav ul li a:hover::after{
 
 /* ----------------------------------home --------------------------------------  */
 #home{
-    width: 80%;
-    min-height:300px ;
+    width: 100%;
+    min-height:auto ;
     margin: auto;
     margin-top: 30px;
     font-size: 30px;
-  background: url(../img/Portfolio.gif);
+  background: url(../img/maingif.1646021.gif);
   background-size: 100% 100%;
   padding: 10%;
   background-color: #ababab;
   border: 1px solid #ababab;
   border-radius: 10px;
+  /* display: flex;
+  justify-content: space-between; */
 }
 .home-div{
   text-align: left;
+  width: 50%;
 }
-
+.home-animated-div{
+  width: 30%;
+  /* background: url(../img/Portfolio-unscreen\ \(1\).gif); */
+}
 .home-animated-div img{
   width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 /* .home-img{
     width: 283px;
@@ -127,6 +134,10 @@ nav ul li a:hover::after{
 
 .home-div-intro{
   margin-bottom: 40px;
+  width: 100%;
+}
+.home-div-intro h2{
+  color: #10101a;
 }
   #resume-button-2{
     /* margin-top: 30px; */
@@ -334,16 +345,40 @@ nav ul li a:hover::after{
 
 /* =========================================== statistics ==================================================  */
 
-#statisticsdiv{
+
+
+#stats{
   width: 85%;
   margin: auto;
+  margin-top: 100px;
 }
-#statisticsdiv > div:nth-child(1) {
+#statisticsdiv{
+  width: 100%;
+  margin: auto;
+}
+.github-streak-stats-div {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1200px) {
+.github-streak-stats-div>div{
+  width: 50%;
+}
+.github-streak-stats-div div img{
+  width: 100%;
+  height: 16rem;
+}
+.github-lang-div{
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+.github-lang-div img{
+  width: 100%;
+  height: 16rem;
+}
+
+/* @media (max-width: 1200px) {
   html {
     font-size: 55%;
   }
@@ -355,7 +390,7 @@ nav ul li a:hover::after{
     flex-direction: column;
     text-align: center;
   }
-}
+} */
 
 
   /* -----------------------------contact ---------------------------------  */

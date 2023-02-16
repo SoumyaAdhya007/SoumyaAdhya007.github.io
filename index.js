@@ -11,13 +11,18 @@
 GitHubCalendar(".calendar", "SoumyaAdhya007", { responsive: true });
 
 // Use a proxy
-const username = "SoumyaAdhya007";
+// const username = "SoumyaAdhya007";
+// GitHubCalendar(".calendar", "SoumyaAdhya007", {
+//   proxy(username) {
+//     return fetch(`https://your-proxy.com/github?user=${username}`);
+//   },
+// }).then((r) => console.log(r))
+// .catch((err)=>console.log(err))
 GitHubCalendar(".calendar", "SoumyaAdhya007", {
-  proxy(username) {
-    return fetch(`https://your-proxy.com/github?user=${username}`);
-  },
-}).then((r) => console.log(r))
-.catch((err)=>console.log(err))
+    responsive: true,
+    global_stats: false,
+    tooltips: true,
+  });
 
 document.getElementById("resume-button-1").onclick=()=>{
     window.open("https://drive.google.com/file/d/1BPDySMDMXclvoj4oCfOHycLf5hceaZJa/view?usp=share_link");
