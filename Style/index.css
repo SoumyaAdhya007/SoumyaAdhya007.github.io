@@ -207,10 +207,10 @@ nav ul li a:hover::after{
     margin: auto;
     text-align: center;
 }
-.about-img{
-  /* padding-top:  20px; */
+/* .about-img{
+  padding-top:  20px;
 
-}
+} */
 .row img{
   width: 65%;
   height: 100%;
