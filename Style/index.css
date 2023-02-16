@@ -178,16 +178,16 @@ nav ul li a:hover::after{
     color: #00a2e2;
     background: none;
   } */
-  #resume-button-2{
+  .resume-button-2{
     margin-top: 30px;
   }
-  #resume-button-2 button{
+  .resume-button-2 button{
     /* width: 10%; */
     background-color: #ff004f;
     padding:10px 35px;
     border-radius: 10px;
   }
-  #resume-button-2 button a{
+  .resume-button-2 button a{
     font-size:1.2rem;
     color: #fff;
   }
