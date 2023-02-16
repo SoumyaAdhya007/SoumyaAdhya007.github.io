@@ -64,12 +64,13 @@ nav ul li a {
     font-size: 18px;
     position: relative;
 }
-.nav-resume-div{
+#resume-button-1{
   background-color: #262626;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
+  border: 0;
 }
-.nav-resume-div i,.nav-resume-div a{
+#resume-button-1 i,#resume-button-1 a{
   color: #ff004f;
 }
 nav ul li a::after{
