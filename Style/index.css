@@ -21,7 +21,21 @@ body{
 
 /* ====================================== navbar ======================================   */
 header{
+  /* color: #ababab;
+  border-bottom: 1px solid #ababab;
+  border-radius: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; */
+}
+.topnav{
   background-color: #0f0f17;
+  /* display: flex;
+  justify-content: space-between; */
+  padding: 10px 2%;
+  /* width: 90%; */
+  margin: auto;
   color: #ababab;
   border-bottom: 1px solid #ababab;
   border-radius: 5px;
@@ -29,13 +43,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-}
-.topnav{
-    /* display: flex;
-    justify-content: space-between; */
-    padding: 10px 2%;
-    /* width: 90%; */
-    margin: auto;
+  margin-bottom: 200px;
 }
 /* .topnav.scroll {
   background-color: #A1572F;
