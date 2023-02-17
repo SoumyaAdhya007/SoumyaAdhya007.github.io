@@ -121,7 +121,7 @@ nav ul li a:hover::after{
     width: 90%;
     min-height:auto ;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: 30px;
   background: url(../img//Portfolio-back.gif);
   background-size: 100% 100%;
@@ -270,7 +270,7 @@ nav ul li a:hover::after{
 
 
   /* ------------------- projects -----------------------  */
-  /* #projects{
+  #projects{
     width: 85%;
     margin: auto;
 
@@ -299,10 +299,10 @@ nav ul li a:hover::after{
     justify-content: space-between;
     margin-top: 30px;
   }
-  .project-card-image-div{
+  /* .project-card-image-div{
     width: 50%;
     height: 100%;
-  }
+  } */
 .project-card-dtails-div{
   margin-left: 40px;
 }
@@ -367,76 +367,12 @@ nav ul li a:hover::after{
 
   padding: 10.4px 10px;
   color: rgb(4, 89, 146);
-} */
+}
 
 /* -----------------------------------  */
 
 
-#projects{
-  margin: 250px 4%;
-}
 
-#projects>div{
-  display: grid;
-grid-template-columns: repeat(2,1fr);
-gap: 4%;
-}
-
-.project-card{
-  /* background-color: rgb(65, 90, 90); */
-  border: 1px solid #ababab;
-  padding: 6%;
-  border-radius: 8px;
-}
-
-.project-card>img{
-  width: 100%;
-}
-
-.project-card *:hover{
-  color:rgb(101, 245, 233)
-}
-.project-title{
-  font-size: 30px;
-}
-
-.techstack{
-  display: flex;
-}
-
-.project-tech-stack{
-color: white;
-
-}
-.flex{
-  display: flex;
-  justify-content: space-around;  
-}
-
-.flex img{
-width: 40%;
-border-radius: 3%;
-margin-left: 0%;
-}
-
-
-.projectlinks>a{
-  text-decoration: none;
-  color:#010234; 
-  font-weight: bolder;
-  border: 2px solid rgb(94, 213, 222);
-  padding: 7px;
-  border-radius: 5px;
-margin: 7px;
-background-color: rgb(250, 250, 250);
-
-}
-
-.projectlinks>a:hover{
-
-  background-color: rgb(18, 44, 67);
-color: white;
-}
 
 
 /* =========================================== statistics ==================================================  */
