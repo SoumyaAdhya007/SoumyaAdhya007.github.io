@@ -20,7 +20,7 @@ body{
 }
 
 /* ====================================== navbar ======================================   */
-header{
+/* header{
   color: #ababab;
   border-bottom: 1px solid #ababab;
   border-radius: 5px;
@@ -28,7 +28,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-}
+} */
 .topnav{
   background-color: #0f0f17;
   /* display: flex;
@@ -39,9 +39,9 @@ header{
   color: #ababab;
   border-bottom: 1px solid #ababab;
   border-radius: 5px;
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  left: 0; */
+  left: 0;
   width: 100%;
   /* margin-bottom: 200px; */
 }
