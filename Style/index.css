@@ -113,7 +113,7 @@ nav ul li a:hover::after{
     width: 90%;
     min-height:auto ;
     margin: auto;
-    margin-top: 130px;
+    margin-top: 50px;
     font-size: 30px;
   background: url(../img//Portfolio-back.gif);
   background-size: 100% 100%;
@@ -267,7 +267,7 @@ nav ul li a:hover::after{
     margin: auto;
     /* text-align: center; */
     /* border-top: 1px solid #ababab; */
-    margin-top: 100px;
+    margin-top: 50px;
 
 
   }
@@ -379,7 +379,7 @@ nav ul li a:hover::after{
 #stats{
   width: 85%;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #statisticsdiv{
   width: 100%;
@@ -426,7 +426,7 @@ nav ul li a:hover::after{
   #contact{
     width: 85%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
   }
   .row{
