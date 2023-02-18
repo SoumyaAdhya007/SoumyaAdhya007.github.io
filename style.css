@@ -36,7 +36,7 @@ section {
 }
 
 .max-width {
-  max-width: 1300px;
+  max-width: 100%;
   padding: 0 80px;
   margin: auto;
 }
@@ -359,7 +359,7 @@ section .title,.title-white {
 } */
 
 #projects{
-  background: #10101a;
+  background: #0d1117;
   color: #f1f1f1;
   width: 100%;
   margin: auto;
@@ -512,7 +512,7 @@ color: rgb(4, 89, 146);
 
 /* ====================================== skills ===============================================  */
 #skills{
-  background: #10101a;
+  background: #0d1117;
   margin-top: 100px;
   
 }
@@ -954,7 +954,7 @@ footer span a:hover {
   }
 /* ============================== projects ===========================  */
   #projects{
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
 
@@ -976,7 +976,7 @@ footer span a:hover {
   }
   /* ----------------- skils ====================== */
   #skills{
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   #grid{
@@ -1001,7 +1001,7 @@ footer span a:hover {
 
   /* ------------------- skills ------------------  */
   #skills{
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   #grid{
