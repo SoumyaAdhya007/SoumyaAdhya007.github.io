@@ -766,8 +766,40 @@ footer span a:hover {
 
 
 }
+@media (max-width: 1024px){
+  #projects{
+    width: 100%;
+    margin: auto;
+  }
 
-@media (max-width: 1024px) {
+  .project-card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card-image-div, .project-card-image-div img{
+    width: 100%;
+  }
+  .project-card-dtails-div{
+    margin-left: 0;
+    width: 100%;
+    padding: 1%;
+  }
+  .project-title{
+    text-align: center;
+  }
+
+  .skills .skills-content .column,
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+
+  
+}
+
+@media (max-width: 947px) {
   .nav-link {
     display: block;
     z-index: 999;
