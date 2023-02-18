@@ -60,7 +60,7 @@ footer {
   justify-content: space-between;
 }
 
-section .title {
+section .title,.title-white {
   position: relative;
   text-align: center;
   font-size: 40px;
@@ -68,9 +68,10 @@ section .title {
   margin-bottom: 60px;
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
+  color: #10101a;
 }
 
-section .title::before {
+ #about .title::before,#contact .title::before,#stats .title::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -80,8 +81,18 @@ section .title::before {
   background: #111;
   transform: translateX(-50%);
 }
+ #skills .title-white::before,#projects .title-white::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
 
-section .title::after {
+/* #about .title::after,#contact .title::after {
   position: absolute;
   bottom: -8px;
   left: 50%;
@@ -90,7 +101,7 @@ section .title::after {
   padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
-}
+} */
 
 /* navbar styling */
 .navbar {
@@ -250,9 +261,9 @@ section .title::after {
 }
 
 /* ------------------ about section styling --------------------- */
-.about.section .title::after {
+/* .about.section .title::after {
   content: "who i am";
-}
+} */
 
 .about-content {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -319,107 +330,38 @@ section .title::after {
   background: none;
 }
 
-/*  ------------------------ projects section styling ------------------*/
-/* .teams {
-  color: #fff;
-  background: #111;
-}
 
-.projects {
-  color: #fff;
-  background: #111;
-  display: grid;
-  grid-template-columns: repeat(auto);
-}
 
-.projects .title::before,
-.teams .title::before {
-  background: #fff;
-}
-
-.projects .title::after,
-.teams .title::after {
-  background: #111;
-  margin-top: 10px;
-  content: "what i have built";
-}
-
-.projects .serv-content {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.projects .serv-content .card {
-  height: 100%;
-  background: #222;
-  text-align: center;
-  border-radius: 6px;
-  padding: 50px 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.projects .serv-content .card:hover {
-  box-shadow: rgba(251, 251, 251, 0.24) 0px 3px 8px;
-  background: rgb(30, 29, 29);
-}
-
-.projects .serv-content .card .box {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-  transition: all 0.3s ease;
-}
-
-.projectImage {
-  height: 40%;
-  object-fit: contain;
-}
-
-.projects .serv-content .card:hover .box {
-  transform: scale(1.05);
-}
-
-.projects .serv-content .card i {
-  font-size: 50px;
-  color: #2253c8;
-  transition: color 0.3s ease;
-}
-
-.projects .serv-content .card:hover i {
-  color: #fff;
-}
-
-.projects .serv-content .card .text {
-  text-align: center;
-  font-size: 25px;
-  font-weight: 500;
-  margin: 20px 0px;
-}
-
-.techstack {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10%;
-  width: 90%;
-  margin: auto;
-  margin-top: 30px;
-}
-
-.techstack img {
-  object-fit: contain;
-  width: 100%;
+/* ============================= projects =================================  */
+/* #project .title::after {
 } */
+/* #project .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: white;
+  transform: translateX(-50%);
+}
+
+#project .title::after {
+  content: "what i have";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: #c82d22;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+} */
+
 #projects{
-  background: #111;
+  background: #10101a;
   color: #f1f1f1;
-  width: 85%;
+  width: 100%;
   margin: auto;
 
   margin-top: 50px;
@@ -437,7 +379,7 @@ section .title::after {
   width: 20px;
 }
 .project-card{
-width: 85%;
+width: 65%;
 margin: auto;
 height: auto;
   padding: 20px;
@@ -535,18 +477,27 @@ color: rgb(4, 89, 146);
 .github-streak-stats-div>div{
   width: 50%;
 }
-.github-streak-stats-div div img{
+#github-streak-stats{
+  width: 100%;
+  height: auto;
+}
+#github-stats-card{
+  width: 100%;
+  /* margin-top: 2px; */
+  height: auto;
+}
+/* .github-streak-stats-div div img{
   width: 100%;
   height: 16rem;
-}
+} */
 .github-lang-div{
   width: 50%;
   margin: auto;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .github-lang-div img{
   width: 100%;
-  height: 16rem;
+  height: auto;
 }
 
 
@@ -554,113 +505,19 @@ color: rgb(4, 89, 146);
 
 /* ------------------- skills section styling --------------------*/
 
-.skills .title::after {
+/* #skills .title::after {
   content: "what i have";
-}
-
-.skills .skills-content .column {
-  width: calc(50% - 30px);
-}
-
-.skills .skills-content .left .text,
-.right .bars .text {
-
-  text-decoration: underline;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-/* .skills .skills-content .left ul{
-  list-style: none;
 } */
-.skills .skills-content .left ul li {
-  margin: 15px 10px;
-}
 
-.skills .skills-content .left ul li:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.skills .skills-content .left a {
-  display: inline-block;
-  background: #2253c8;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 16px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid #2253c8;
-  transition: all 0.3s ease;
-}
-
-.skills .skills-content .left a:hover {
-  color: #2253c8;
-  background: none;
-}
-
-.skills .skills-content .right .bars {
-  margin-bottom: 15px;
-}
-
-.skills .skills-content .right .info {
-  display: flex;
-  margin-bottom: 5px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.skills .skills-content .right span {
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.skills .skills-content .right .line {
-  height: 5px;
-  width: 100%;
-  background: lightgrey;
-  position: relative;
-}
-
-.skills .skills-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: #2253c8;
-}
-
-.skills-content .right .html::before {
-  width: 90%;
-}
-
-.skills-content .right .css::before {
-  width: 80%;
-}
-
-.skills-content .right .js::before {
-  width: 90%;
-}
-
-.skills-content .right .php::before {
-  width: 70%;
-}
-
-.skills-content .right .mysql::before {
-  width: 70%;
-}
 
 /* ====================================== skills ===============================================  */
 #skills{
-  background: #111;
+  background: #10101a;
   margin-top: 100px;
   
 }
 #grid{
-  border-top: 1px solid #ababab;
+  /* border-top: 1px solid #ababab; */
   width: 85%;
   margin: auto;
     /* margin: 3vh; */
@@ -674,105 +531,33 @@ color: rgb(4, 89, 146);
     /* border: 1px solid red; */
     text-align: center;
     /* border-top: 1px solid gainsboro; */
+    border-radius: 5%;
   
   }
 .skills-card-img{
     width: 100px;
     height: 100px;
-    /* border: 1px solid red; */
   }
   #skills-card{
     width: 100px;
     height: 100px;
     /* border: 1px solid red; */
   }
-  #skills-card-img{
+  /* .skills-card-img{
     width: 100%;
-  }
+    height: 100%;
+  } */
 
 
-/* ---------------------- teams section styling ------------------------ */
-.teams .title::after {
-  content: "who i use";
-}
-
-.teams .carousel .card {
-  background: #222;
-  border-radius: 6px;
-  padding: 25px 35px;
-  text-align: center;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover {
-  background: #2253c8;
-}
-
-.teams .carousel .card .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover .box {
-  transform: scale(1.05);
-}
-
-.teams .carousel .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-
-.teams .carousel .card img {
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #2253c8;
-  transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover img {
-  border-color: #fff;
-}
-
-.owl-dots {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.owl-dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 5px;
-  outline: none !important;
-  border-radius: 50%;
-  border: 2px solid #2253c8 !important;
-  transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-  width: 35px;
-  border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-  background: #2253c8 !important;
-}
 
 /* ---------------------- github section styling -------------*/
 
 /* .github {
 } */
 
-.github .title::after {
+/* .github .title::after {
   content: "what I did";
-}
+} */
 
 .github .calendar {
   width: 100%;
@@ -783,9 +568,9 @@ color: rgb(4, 89, 146);
 
 
 /* ---------------------- contact section styling -------------*/
-.contact .title::after {
+/* .contact .title::after {
   content: "get in touch";
-}
+} */
 
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -931,10 +716,47 @@ footer span a:hover {
 }
 
 /* responsive media query start */
+
+
+@media (min-width:1201px){
+/* ======================== github ============================  */
+#stats{
+  width: 85%;
+  margin: auto;
+  margin-top: 50px;
+}
+#statisticsdiv{
+  width: 100%;
+  margin: auto;
+}
+.github-streak-stats-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.github-streak-stats-div>div{
+  width: 50%;
+}
+.github-streak-stats-div div img{
+  width: 100%;
+  height: 30rem;
+}
+.github-lang-div{
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+.github-lang-div img{
+  width: 100%;
+  height: 30rem;
+}
+}
 @media (max-width: 1270px) {
   .about.section .about-content .left {
     width: 40%;
   }
+
+  
 }
 
 @media (max-width: 991px) {
@@ -945,7 +767,7 @@ footer span a:hover {
 
 }
 
-@media (max-width: 947px) {
+@media (max-width: 1024px) {
   .nav-link {
     display: block;
     z-index: 999;
@@ -1023,13 +845,27 @@ footer span a:hover {
     padding: 5%;
   }
 
-  .projects .serv-content {
-    grid-template-columns: repeat(2, 1fr);
+  /* ============================== projects ===========================  */
+  #projects{
+    width: 100%;
+    margin: auto;
   }
 
-  .projects .serv-content .card {
-    /* width: calc(50% - 10px); */
-    margin-bottom: 20px;
+  .project-card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card-image-div, .project-card-image-div img{
+    width: 100%;
+  }
+  .project-card-dtails-div{
+    margin-left: 0;
+    width: 100%;
+    padding: 1%;
+  }
+  .project-title{
+    text-align: center;
   }
 
   .skills .skills-content .column,
@@ -1038,16 +874,34 @@ footer span a:hover {
     margin-bottom: 35px;
   }
 
-  .github {
-    display: none;
+
+  
+  /* ======================== github =====================  */
+  #stats{
+    width: 90%;
+    margin: auto;
+
+  }
+  .github-streak-stats-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .github-streak-stats-div>div{
+    width: 100%;
+  }
+  .github-streak-stats-div>div img{
+    width: 100%;
+    height: 100%;
+  }
+  .github-stats-card{
+    margin-top: 10px;
+  }
+  .github-lang-div,.github-lang-div img{
+    width: 100%;
+    margin-top: 0px;
   }
 
-  .github .calendar {
-    width: none;
-    display: none;
-    padding-top: 30px;
-    border: none;
-  }
 }
 
 @media (max-width: 690px) {
@@ -1066,11 +920,40 @@ footer span a:hover {
   .home .home-content a {
     font-size: 20px;
   }
-
-  .projects .serv-content {
-    grid-template-columns: repeat(1, 1fr);
+/* ============================== projects ===========================  */
+  #projects{
+    width: 90%;
+    margin: auto;
   }
 
+  .project-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card-image-div, .project-card-image-div img{
+    width: 100%;
+  }
+  .project-card-dtails-div{
+    margin-left: 0;
+    width: 100%;
+    padding: 1%;
+  }
+  .project-title{
+    text-align: center;
+  }
+  /* ----------------- skils ====================== */
+  #skills{
+    width: 90%;
+    margin: auto;
+  }
+  #grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  
 }
 
 @media (max-width: 580px) {
@@ -1083,6 +966,47 @@ footer span a:hover {
     padding: 5%;
   }
 
+
+  /* ------------------- skills ------------------  */
+  #skills{
+    width: 90%;
+    margin: auto;
+  }
+  #grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .skills-card-img{
+    width: 50px;
+    height: 50px;
+  }
+
+  /* ======================== github =====================  */
+  #stats{
+    width: 90%;
+    margin: auto;
+
+  }
+  .github-streak-stats-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .github-streak-stats-div>div{
+    width: 100%;
+  }
+  .github-streak-stats-div>div img{
+    width: 100%;
+    height: 100%;
+  }
+  .github-stats-card{
+    margin-top: 10px;
+  }
+  .github-lang-div,.github-lang-div img{
+    width: 100%;
+    margin-top: 0px;
+  }
 
 }
 
@@ -1224,4 +1148,35 @@ footer span a:hover {
 
 .chakra {
   border-radius: 50%;
+}
+
+@media (max-width:370px){
+  .project-tech-stack div{
+    height: 90%;
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    }
+    .project-tech-stack img{
+    height: 2.5rem;
+    width: 2.5rem;
+    }
+    .project-deployed-div{
+    width: 100%;
+    margin-top: 30px;
+    }
+    .project-card-dtails-div button{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    }
+    .project-deployed-btn img{
+    margin-top: 2px;
+    height: 20px;
+    width: 20px;
+    }
 }
