@@ -368,36 +368,49 @@ section .title,.title-white {
 
 
 }
+.project-div{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px 40px;
+}
+.project-card{
+/* width: 65%; */
+/* margin: auto; */
+height: auto;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin-top: 30px;
+}
+.project-card-image-div{
+  width: 100%;
+  height: 100%;
+}
+.project-card-dtails-div{
+  width: 100%;
+  padding: 10px;
+}
 
 .project-card-image-div img{
   width: 100%;
-  height: 100%;
+  height: 300px;
   border-radius: 10px;
 }
 .project-deployed-btn img{
   height: 20px;
   width: 20px;
 }
-.project-card{
-width: 65%;
-margin: auto;
-height: auto;
-  padding: 20px;
-  border: 1px solid white;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-/* .project-card-image-div{
-  width: 50%;
-  height: 100%;
-} */
-.project-card-dtails-div{
+/* .project-card-dtails-div{
 margin-left: 40px;
-}
+} */
 .project-card h1{
-  font-weight: 700;
+  text-align: center;
+  font-weight: 800;
   font-size: 3rem;
 }
 .project-card p{
@@ -714,7 +727,11 @@ footer span a {
 footer span a:hover {
   text-decoration: underline;
 }
-
+#msg-span{
+  color: #dc143c;
+  margin-top: 10px;
+  display: block;
+}
 /* responsive media query start */
 
 
@@ -771,9 +788,14 @@ footer span a:hover {
     width: 100%;
     margin: auto;
   }
-
+  .project-div{
+    width: 70%;
+    margin: auto;
+    display: block;
+    /* grid-template-columns: repeat(2,1fr); */
+  }
   .project-card{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -882,9 +904,14 @@ footer span a:hover {
     width: 100%;
     margin: auto;
   }
-
+  .project-div{
+    width: 70%;
+    margin: auto;
+    display: block;
+    /* grid-template-columns: repeat(2,1fr); */
+  }
   .project-card{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -957,7 +984,12 @@ footer span a:hover {
     width: 100%;
     margin: auto;
   }
-
+  .project-div{
+    width: 70%;
+    margin: auto;
+    display: block;
+    /* grid-template-columns: repeat(2,1fr); */
+  }
   .project-card{
     width: 100%;
     display: flex;
@@ -997,7 +1029,12 @@ footer span a:hover {
   .about.section .about-content .right {
     padding: 5%;
   }
-
+  .project-div{
+    width: 80%;
+    margin: auto;
+    display: block;
+    /* grid-template-columns: repeat(2,1fr); */
+  }
 
   /* ------------------- skills ------------------  */
   #skills{
@@ -1013,7 +1050,12 @@ footer span a:hover {
     width: 50px;
     height: 50px;
   }
-
+  .project-div{
+    /* width: 80%;
+    margin: auto; */
+    display: block;
+    /* grid-template-columns: repeat(2,1fr); */
+  }
   /* ======================== github =====================  */
   #stats{
     width: 90%;
@@ -1043,6 +1085,12 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
+  .project-div{
+    width: 80%;
+    margin: auto;
+    display: block;
+    /* grid-template-columns: repeat(2,1fr); */
+  }
 
   .about.section .about-content .right .text span:nth-child(1) {
     display: block;
@@ -1183,6 +1231,12 @@ footer span a:hover {
 }
 
 @media (max-width:370px){
+  .project-div{
+    width: 80%;
+    margin: auto;
+    display: block;
+    /* grid-template-columns: repeat(2,1fr); */
+  }
   .project-tech-stack div{
     height: 90%;
     width: 20%;
