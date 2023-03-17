@@ -9,13 +9,10 @@ GitHubCalendar(".calendar", "SoumyaAdhya007", {
   });
 
 
-  document.getElementById("resume-button-1").onclick=()=>{
-    window.open("https://drive.google.com/file/d/1BPDySMDMXclvoj4oCfOHycLf5hceaZJa/view?usp=share_link");
-      }
+  // document.getElementById("resume-button-1").onclick=()=>{
+  //   window.open("https://drive.google.com/file/d/1BPDySMDMXclvoj4oCfOHycLf5hceaZJa/view?usp=share_link");
+  //     }
     
-      document.getElementById("resume-button-2").onclick=()=>{
-        window.open("https://drive.google.com/file/d/1BPDySMDMXclvoj4oCfOHycLf5hceaZJa/view?usp=share_link");
-      }
-
-
-      
+  //     document.getElementById("resume-button-2").onclick=()=>{
+  //       window.open("https://drive.google.com/file/d/1BPDySMDMXclvoj4oCfOHycLf5hceaZJa/view?usp=share_link");
+  //     }

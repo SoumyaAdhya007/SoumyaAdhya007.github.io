@@ -812,10 +812,15 @@ footer span a:hover {
   }
 
   .skills .skills-content .column,
-  .contact .contact-content .column {
+   .column {
     width: 100%;
     margin-bottom: 35px;
   }
+  /* .skills .skills-content .column,
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  } */
 
 
   
