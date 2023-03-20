@@ -242,7 +242,7 @@ section .title,.title-white {
   font-weight: 500;
 }
 
-.home-div .home-content a {
+#resume-button-2 {
   display: inline-block;
   background: #2253c8;
   color: #fff;
@@ -254,7 +254,10 @@ section .title,.title-white {
   border: 2px solid #2253c8;
   transition: all 0.3s ease;
 }
+#resume-button-2 a{
+  color: #fff;
 
+}
 .home-div .home-content a:hover {
   color: #2253c8;
   background: none;
@@ -484,10 +487,11 @@ color: rgb(4, 89, 146);
 }
 .github-streak-stats-div {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 .github-streak-stats-div>div{
+  margin: auto;
   width: 50%;
 }
 #github-streak-stats{
@@ -748,15 +752,15 @@ footer span a:hover {
 }
 .github-streak-stats-div {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 .github-streak-stats-div>div{
   width: 50%;
 }
 .github-streak-stats-div div img{
   width: 100%;
-  height: 30rem;
+  /* height: 30rem; */
 }
 .github-lang-div{
   width: 50%;
@@ -765,7 +769,7 @@ footer span a:hover {
 }
 .github-lang-div img{
   width: 100%;
-  height: 30rem;
+  /* height: 30rem; */
 }
 }
 @media (max-width: 1270px) {
