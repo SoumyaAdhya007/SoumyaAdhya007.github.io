@@ -1239,13 +1239,19 @@ footer span a:hover {
   border-radius: 50%;
 }
 
-@media (max-width:370px){
+@media (max-width:420px){
   .project-div{
     width: 80%;
     margin: auto;
     display: block;
     /* grid-template-columns: repeat(2,1fr); */
   }
+  .project-card h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
   .project-tech-stack div{
     height: 90%;
     width: 20%;
@@ -1274,4 +1280,29 @@ footer span a:hover {
     height: 20px;
     width: 20px;
     }
+}
+@media (max-width:420px){
+  .home-div .home-content .text-2 {
+    font-size: 50px;
+  }
+#resume-button-2{
+  font-size: 19px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.home-div .home-content .text-3 {
+  font-size: 30px;
+}
+.project-tech-stack {
+  height: auto;
+  flex-wrap: wrap;
+}
+.project-card {
+  height: auto;
+}
+.sub-title1 {
+  width: fit-content;
+}
 }
