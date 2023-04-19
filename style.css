@@ -452,6 +452,7 @@ margin-top: 30px;
 }
 .project-card-dtails-div button{
 width: 49%;
+border: none;
 border-radius: 5px;
 font-size: 20px;
 }
@@ -592,9 +593,9 @@ color: rgb(4, 89, 146);
   content: "get in touch";
 } */
 
-.contact .contact-content .column {
+/* .contact .contact-content .column {
   width: calc(50% - 30px);
-}
+} */
 
 .contact .contact-content .text {
   font-size: 20px;
