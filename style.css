@@ -1247,7 +1247,7 @@ footer span a:hover {
 
 @media (max-width:420px){
   .project-div{
-    width: 95%;
+    width: 100%;
     margin: auto;
     display: block;
     /* grid-template-columns: repeat(2,1fr); */
@@ -1308,6 +1308,7 @@ footer span a:hover {
 }
 .project-card {
   height: auto;
+  padding: 12px;
 }
 .sub-title1 {
   width: fit-content;
